@@ -119,3 +119,32 @@ for (const user of users) {
     // user.status || console.log(user)
     user.age <= 30 || console.log(user)
 }
+
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+// let arr = [ 'a', 'b', 'c'];
+// let word = '';
+// for (let i = 0; i < arr.length; i++) {
+//     const user = arr[i];
+//     word += arr[i]
+// }
+// console.log(word);
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+
+// let arr = [ 'a', 'b', 'c'];
+// let i = 0;
+// let word = '';
+// while (i < arr.length) {
+//     word += arr[i];
+//     i++;
+// }
+// console.log(word);
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+
+// let arr = ['a', 'b', 'c'];
+// let word = '';
+// for (const item of arr) {
+//     word += item;
+// }
+// console.log(word);
