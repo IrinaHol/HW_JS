@@ -45,8 +45,8 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 
 // document.write('<ul>');
-// for (let i = 0; i < listOfItems.length; i++) {
-//     document.write(`<li>${listOfItems[i]}</li>`);
+// for (const listOfItem of listOfItems) {
+//     document.write(`<li>${listOfItem}</li>`);
 // }
 // document.write('</ul>');
 
@@ -85,12 +85,12 @@ let products = [
 // <img src="IMAGE" alt="" class="product-image">
 // </div>
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
-//
 
-// for (let i = 0; i < products.length; i++) {
-//    document.write(`<div>
-// <h3>${products[i].title} Price - ${products[i].price}</h3>
-// <img src=${products[i].image} alt="img">
+
+// for (const product of products) {
+//     document.write(`<div>
+// <h3>${product.title} Price - ${product.price}</h3>
+// <img src=${product.image} alt="img">
 // </div>`)
 // }
 
@@ -114,8 +114,8 @@ let users = [
 // - користувачів зі статусом false
 // - користувачів які старші за 30 років
 
-for (let i = 0; i < users.length; i++) {
-     // !users[i].status || console.log(users[i])
-    // users[i].status || console.log(users[i])
-    users[i].age <= 30 || console.log(users[i])
+for (const user of users) {
+    // !user.status || console.log(user)
+    // user.status || console.log(user)
+    user.age <= 30 || console.log(user)
 }
