@@ -70,13 +70,13 @@
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
 // const arr = [100, -15, true, false, 0.13, 12];
-
+//
 // function build(array) {
 //     document.write('<ul>')
 //     for (const item of array) {
-//             document.write(`<li>${item}</li>`)
+//             document.write(`<li>${item}</li>`);
 //     }
-//     document.write('</ul>')
+//     document.write('</ul>');
 //
 // }
 //
@@ -84,29 +84,30 @@
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-const arr = [
-    {
-        id: 1,
-        name: 'Ivan',
-        age: 22
-    },
-    {
-        id: 2,
-        name: 'Olia',
-        age: 28
-    },
-    {
-        id: 3,
-        name: 'Vika',
-        age: 45
-    },
-
-];
+// const arr = [
+//     {
+//         id: 1,
+//         name: 'Ivan',
+//         age: 22
+//     },
+//     {
+//         id: 2,
+//         name: 'Olia',
+//         age: 28
+//     },
+//     {
+//         id: 3,
+//         name: 'Vika',
+//         age: 45
+//     },
+//
+// ];
+//
 // function build(array) {
 //     for (const item of array) {
 //         document.write('<div>');
 //         for (const itemKey in item) {
-//             document.write(`${itemKey} : ${item[itemKey]}, `)
+//             document.write(`${itemKey} : ${item[itemKey]}, `);
 //         }
 //         document.write('</div>');
 //     }
@@ -122,25 +123,27 @@ const arr = [
 //     let min = array[0]
 //     for (let i = 0; i < array.length; i++) {
 //         if (array[i] < min) {
-//             min = array[i]
+//             min = array[i];
 //         }
 //     }
-//     return min
+//     return min;
 // }
 //
 // console.log(minNum(arrNumber));
+//
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
 // const arrNumber = [1, 2, 10];
 // function sum(arr) {
 //     let sum = 0;
 //     for (const item of arr) {
-//         sum += item
+//         sum += item;
 //     }
 //     return sum;
 // }
 //
 // console.log(sum(arrNumber));
+//
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
