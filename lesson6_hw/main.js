@@ -89,14 +89,14 @@ let coursesAndDurationArray = [
 //     color:'', // 'red','black'
 // }
 
-const cardSuit = ['spade', 'diamond', 'heart', 'clubs'];
+const cardSuit = ['spades', 'diamonds', 'hearts', 'clubs'];
 const value = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
 const color = ['red', 'black'];
 const deck = [];
 
 for (const itemSuit of cardSuit) {
     let cardColor;
-    if (itemSuit === 'spade' || itemSuit === 'clubs') {
+    if (itemSuit === 'spades' || itemSuit === 'clubs') {
         cardColor = color[1];
     } else {
         cardColor = color[0];
@@ -134,20 +134,12 @@ console.log(clubs);
 //     clubs:[]
 // }
 
-// const cartDeck = deck.reduce((acc, value) => {
-//     if (value.suit === 'spade') {
-//         acc.spades.push(value);
-//     } else if (value.suit === 'diamond') {
-//         acc.diamonds.push(value);
-//     } else if (value.suit === 'heart') {
-//         acc.hearts.push(value);
-//     } else if (value.suit === 'clubs') {
-//         acc.clubs.push(value);
-//     }
-//     return acc;
-// }, {spades: [], diamonds: [], hearts: [], clubs: []});
-//
-// console.log(cartDeck);
+const cartDeck = deck.reduce((acc, value) => {
+    acc[value.suit].push(value);
+    return acc;
+}, {spades: [], diamonds: [], hearts: [], clubs: []});
+
+console.log(cartDeck);
 
 
 // =========================
