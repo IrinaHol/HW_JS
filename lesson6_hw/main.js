@@ -119,7 +119,7 @@ console.log(reCarts);
 const diamonds = deck.filter(value => value.suit === 'diamond');
 console.log(diamonds);
 
-const clubs = deck.filter(value => value.suit === 'clubs' && value.value >= '9');
+const clubs = deck.filter(value => value.suit === 'clubs' && (value.value >= '9' || value.value === '10'));
 console.log(clubs);
 
 
