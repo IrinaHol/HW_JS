@@ -1,5 +1,5 @@
-
-fetch('https://jsonplaceholder.typicode.com/users')
+const url = new URL('https://jsonplaceholder.typicode.com/users')
+fetch(url)
     .then(value => value.json())
     .then(users => {
 
@@ -14,7 +14,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             li.innerText = `id: ${user.id}; name: ${user.name}`;
             ul.appendChild(li);
             let a = document.createElement('a');
-            a.innerText = `   show details ${user.id}`;
+            a.innerText = `   Show details User - ${user.id}`;
             a.href = `user-details.html?id=${user.id}`;
             li.appendChild(a);
         }
